@@ -1,1 +1,124 @@
+<html>
+    <head>
+	<style>
+	.container {
+        display:grid;
+		border:5px solid black;
+		grid-template-rows:1fr 3fr 1fr;
+		}
+	.header {
+	    background:red;
+		font-size:3em;
+		text-align:center;
+		grid-column:span 3;
+	    }
+	.nav {
+	    background:green;
+		display:flex;
+		flex-direction:column;
+	    font-size:1.5em;
+		text-align:center;
+	    }
+	.main {
+	    background:blue;
+	    font-size:1.5em;
+		text-align:center;
+		padding:10px;
+		}
+	.aside {
+	    background:orange;
+	    font-size:2em;
+		text-align:center;
+		}
+	.footer {
+	    background:yellow;
+	    font-size:1em;
+		text-align:center;
+		grid-column:span 3;                                      
+	        padding:10px;
+		}
+		
+	@media only screen and (max-width:600px) {
+	    
+		.container{
+		    display:grid;
+			border:1px solid black;
+			grid-template-rows:1fr 3fr 1fr 1fr;
+ 		    }
+		.nav {
+	    background:green;
+	    font-size:2em;
+		text-align:center;
+	    }
+	.main {
+	    background:blue;
+	    font-size:2em;
+		text-align:center;
+		grid-column:span 2;
+		}
+		.aside {
+	    background:orange;
+	    font-size:2em;
+		text-align:center;
+		grid-column:span 3;
+		}	
+	 }
+	 @media only screen and (max-width:300px) {
+	    
+		.container{
+		    display:grid;
+			border:1px solid black;
+			grid-template-rows:1fr 1fr 5fr 1fr 1fr;
+ 		    }
+		.header {
+	    background:red;
+		font-size:2em;
+		text-align:center;
+		grid-column:span 3;
+	    }
+	.nav {
+	    background:green;
+	    font-size:2em;
+		text-align:center;
+		grid-column:span 3;
+	    }
+	.main {
+	    background:blue;
+	    font-size:2em;
+		text-align:center;
+		grid-column:span 3;
+		}
+	.aside {
+	    background:orange;
+	    font-size:2em;
+		text-align:center;
+		grid-column:span 3;
+		}
+	.footer {
+	    background:yellow;
+	    font-size:2em;
+		text-align:center;
+		grid-column:span 3;                                      
+	
+		}
+	
+	
+	
+	    }
+	</style>
+	    <title>MAIN</title>
+	</head>
+<body>
 
+<div class=container>	
+   
+  <div class=header>Who I AM</div>
+	<div class=nav><a href=ABOUT.html>ABOUT ME</a>
+	<a href=TALENTS.html>MY TALENTS</a><a href=SKILLS.html>MY SKILLS</a></div>
+	<div class=main>I am Gian Vladimir B. Rojas and this is an my introduction<br></br></br></div>
+	<div class=aside>ASIDE</div>
+	<div class=footer><a href=README.html>Written by Gian</a></div>
+	
+	</div>
+</body>
+</html>	
